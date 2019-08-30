@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import api from '../../services/api';
-import { Loading, Owner, IssueList } from './styles';
+import { Loading, Owner, IssueList, ButtonGroup } from './styles';
 import Container from '../../components/Container';
 class Repository extends Component {
   static propTypes = {
@@ -32,8 +32,6 @@ class Repository extends Component {
         },
       }),
     ]);
-    console.log(repository);
-    console.log(issues);
 
     this.setState({
       repository: repository.data,
@@ -71,6 +69,10 @@ class Repository extends Component {
             </li>
           ))}
         </IssueList>
+        <ButtonGroup>
+          <button>Anteriror</button>
+          <button>Proximo</button>
+        </ButtonGroup>
       </Container>
     );
   }

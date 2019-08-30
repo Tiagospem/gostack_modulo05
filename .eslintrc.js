@@ -34,6 +34,7 @@ module.exports = {
     'react/static-property-placement': 'off',
     'react/state-in-constructor': 'off',
     'no-unused-vars': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    'no-shadow': 'off'
   },
 };

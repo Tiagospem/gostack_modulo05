@@ -90,3 +90,21 @@ export const IssueList = styled.ul`
     }
   }
 `;
+
+export const ButtonGroup = styled.div`
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  button {
+    border: 0;
+    padding: 15px;
+    color: #fff;
+    background: #7159c1;
+    border-radius: 6px;
+    margin-right: 10px;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+`;
