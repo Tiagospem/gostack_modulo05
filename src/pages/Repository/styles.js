@@ -44,6 +44,7 @@ export const IssueList = styled.ul`
   margin-top: 30px;
   border-top: 1px solid #eee;
   list-style: none;
+  opacity: ${props => (props.loading ? '0.1' : '1')};
   li {
     display: flex;
     padding: 15px 10px;
@@ -105,6 +106,34 @@ export const ButtonGroup = styled.div`
     &:hover {
       opacity: 0.5;
       transition: 0.3s;
+    }
+  }
+  span {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const Filter = styled.div`
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  button {
+    border: 0;
+    padding: 10px;
+    background: #7159c1;
+    color: #fff;
+    border-radius: 6px;
+    margin-right: 5px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+      transition: 0.5s;
     }
   }
 `;
